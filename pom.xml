@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>be.ucll.backend2</groupId>
-    <artifactId>mocking</artifactId>
+    <artifactId>integration-tests</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>05-Mocking</name>
-    <description>05-Mocking</description>
+    <name>06-IntegrationTests</name>
+    <description>06-IntegrationTests</description>
     <url/>
     <licenses>
         <license/>
