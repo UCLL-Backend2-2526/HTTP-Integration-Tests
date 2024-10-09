@@ -1,8 +1,7 @@
-package be.ucll.backend2;
+package be.ucll.backend2.service;
 
 import be.ucll.backend2.exception.ActorNotFoundException;
 import be.ucll.backend2.repository.ActorRepository;
-import be.ucll.backend2.service.ActorService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -42,6 +42,7 @@ public class ActorController {
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteActor(@PathVariable long id) throws ActorNotFoundException {
         actorService.deleteActor(id);
     }

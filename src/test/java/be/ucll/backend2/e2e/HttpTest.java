@@ -1,4 +1,4 @@
-package be.ucll.backend2;
+package be.ucll.backend2.e2e;
 
 import be.ucll.backend2.repository.ActorRepository;
 import be.ucll.backend2.repository.DbInitializer;
@@ -165,12 +165,12 @@ public class HttpTest {
                           "director": "Joel & Ethan Coen",
                           "actors": [
                             {
-                              "id": 1,
-                              "name": "Frances McDormand"
-                            },
-                            {
                               "id": 2,
                               "name": "Steve Buscemi"
+                            },
+                            {
+                              "id": 1,
+                              "name": "Frances McDormand"
                             }
                           ]
                         },
@@ -181,12 +181,12 @@ public class HttpTest {
                           "director": "Martin McDonagh",
                           "actors": [
                             {
-                              "id": 1,
-                              "name": "Frances McDormand"
-                            },
-                            {
                               "id": 3,
                               "name": "Woody Harrelson"
+                            },
+                            {
+                              "id": 1,
+                              "name": "Frances McDormand"
                             }
                           ]
                         }
@@ -211,12 +211,12 @@ public class HttpTest {
                           "director": "Martin McDonagh",
                           "actors": [
                             {
-                              "id": 1,
-                              "name": "Frances McDormand"
-                            },
-                            {
                               "id": 3,
                               "name": "Woody Harrelson"
+                            },
+                            {
+                              "id": 1,
+                              "name": "Frances McDormand"
                             }
                           ]
                         }
@@ -241,12 +241,12 @@ public class HttpTest {
                           "director": "Joel & Ethan Coen",
                           "actors": [
                             {
-                              "id": 1,
-                              "name": "Frances McDormand"
-                            },
-                            {
                               "id": 2,
                               "name": "Steve Buscemi"
+                            },
+                            {
+                              "id": 1,
+                              "name": "Frances McDormand"
                             }
                           ]
                         }
