@@ -14,6 +14,7 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 @WebMvcTest(ActorController.class)
 @ActiveProfiles("test")
 public class ActorControllerTest {
+
     @Autowired
     private WebTestClient client;
 
@@ -21,7 +22,8 @@ public class ActorControllerTest {
     private ActorService actorService;
 
     @Test
-    public void givenActorWithIdExists_whenDeleteActorIsCalled_thenActorIsDeleted() throws ActorNotFoundException {
+    public void givenActorWithIdExists_whenDeleteActorIsCalled_thenActorIsDeleted()
+            throws ActorNotFoundException {
         client.delete()
                 .uri("/api/v1/actor/{id}", 1L)
                 .exchange()

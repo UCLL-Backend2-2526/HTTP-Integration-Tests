@@ -19,6 +19,17 @@ public class MovieRepositoryTest {
     private MovieRepository movieRepository;
 
     @Test
+    public void givenThereIsAMovie_whenFindAllIsCalled_thenMovieIsReturned() {
+        entityManager.persistAndFlush(
+                new Movie("The Shawshank Redemption",
+                        "Frank Darabont",
+                        1994));
+        final var movies = movieRepository.findAll();
+        Assertions.assertEquals(1, movies.size());
+        Assertions.assertEquals("The Shawshank Redemption", movies.getFirst().getTitle());
+    }
+
+    @Test
     public void givenThereAreMoviesAfter2000_whenFindByYearAfterIsCalled_thenMoviesAfter2000AreReturned() {
         entityManager.persist(
                 new Movie("The Shawshank Redemption",
