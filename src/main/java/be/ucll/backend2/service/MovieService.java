@@ -1,5 +1,6 @@
 package be.ucll.backend2.service;
 
+import be.ucll.backend2.controller.dto.CreateMovieDto;
 import be.ucll.backend2.model.Movie;
 import be.ucll.backend2.repository.MovieRepository;
 import org.springframework.stereotype.Service;
@@ -29,5 +30,14 @@ public class MovieService {
         } else {
             return movieRepository.findAll();
         }
+    }
+
+    public Movie createMovie(CreateMovieDto movie) {
+        var movieToSave = new Movie(
+                movie.title(),
+                movie.director(),
+                movie.year()
+        );
+        return movieRepository.save(movieToSave);
     }
 }
